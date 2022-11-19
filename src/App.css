@@ -1,0 +1,155 @@
+body {
+  background-color: #4ca562;
+}
+
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-bottom: 7px;
+  gap: 20px;
+}
+
+/*HEADER AREA*/
+
+.headerSite h1 {
+  color: #1000a5;
+}
+.headerSite h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+/*MAIN AREA*/
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.inputsArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.labelNumMin, .labelNumMax, .labelhowManyNumbers {
+  font-family: monospace;
+  font-size: 19px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.numMin, .numMax, .howManyNumbers {
+  font-size: 17px;
+  text-align: center;
+  width: 250px;
+  border-radius: 20px;
+  border: 1px solid #444;
+  outline: 0;
+  display: block;
+}
+.repeatOptionArea {
+  display: flex;
+  width: 125px;
+  border: 1px solid #444;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  font-family: monospace;
+  font-size: 19px;
+  margin: 10px 0px;
+  background-color: #fafafa
+}
+.labelRadio {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-family: monospace;
+}
+.btnsArea {
+  display: flex;
+  gap: 10px;
+}
+.generateBtn, .clearBtn {
+  font-size: 18px;
+  background-color: transparent;
+  padding: 4px 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid #222;
+  outline: 0;
+  background-color: #fafafa
+}
+.showNumbersArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  border-radius: 20px;
+  border: 1px solid #444;
+  padding: 7px 10px;
+  background-color: #fafafa
+}
+.showNumbersArea h4 {
+  font-size: 20px;
+}
+.numberGeneratedPhrase {
+  font-size: 17px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+.numberGenerated {
+  color: #004472;
+  cursor: copy;
+}
+.copyHint {
+  color: #444;
+}
+
+
+/*FOOTER AREA*/
+
+.footerSite small {
+  color: #222
+}
+
+/*MESSAGE AREA*/
+
+.messages {
+  position:fixed;
+  bottom: 40px;
+  background-color: #fafafa;
+  border: 1px solid #444;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/*GO TO TOP BUTTON*/
+
+.goToTop {
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  font-size: 25px;
+  background-color: #fafafa;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  color: inherit;
+}
