@@ -1,5 +1,6 @@
 import { ChangeEvent, MouseEvent, useState } from 'react'
 import './App.css'
+import { transformNumber } from './helpers/formatNum';
 import { fbConfig } from './firebase/firebase';
 
 function App() {
@@ -131,7 +132,7 @@ function App() {
         {calculated && <div className='showNumbersArea'>
           <h4>Your Numbers are:</h4>
           {numbersList.map((item, index)=>{
-            return(<div key={index} className="numberGeneratedPhrase">{`${index + 1}º Number: `}<span onClick={copyContent} className='numberGenerated'>{item}</span></div>)
+            return(<div key={index} className="numberGeneratedPhrase">{`${transformNumber((index + 1).toString())}º Number: `}<span onClick={copyContent} className='numberGenerated'>{transformNumber(item.toString())}</span></div>)
           })}
           <small className='copyHint'>Hint: Click on number to copy.</small>
         </div>
